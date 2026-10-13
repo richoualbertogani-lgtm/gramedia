@@ -1,0 +1,167 @@
+:root {
+    color-scheme: light;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fa;
+    color: #212529;
+}
+
+body > footer {
+    margin-top: auto;
+}
+
+.navbar {
+    min-height: 64px;
+    background: #fff;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.navbar-brand {
+    color: #212529;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-link {
+    padding: 8px 12px;
+    color: #495057;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #206bc4;
+}
+
+main,
+.container-xl {
+    width: 100%;
+}
+
+.card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.card-header {
+    padding: 16px 20px;
+    background: #fff;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-fieldset {
+    width: min(100% - 32px, 480px) !important;
+    padding: 24px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.card.w-50 {
+    width: min(100% - 32px, 600px) !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-label {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-control,
+.form-select {
+    min-height: 40px;
+    border-color: #ced4da;
+    border-radius: 6px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 3px rgb(32 107 196 / 12%);
+}
+
+.btn {
+    border-radius: 6px;
+}
+
+.table {
+    margin-bottom: 0;
+    background: #fff;
+}
+
+.table thead th {
+    color: #495057;
+    font-size: 0.875rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.dataTables_wrapper {
+    width: 100%;
+}
+
+#carousel-sample .carousel-item img {
+    height: clamp(220px, 32vw, 400px);
+    object-fit: cover;
+}
+
+#wrapper-slider .card {
+    height: 100%;
+}
+
+footer {
+    border-top: 1px solid #e9ecef;
+}
+
+@media (max-width: 767.98px) {
+    .navbar .container-xl {
+        gap: 8px;
+    }
+
+    .navbar-nav {
+        align-items: stretch;
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .navbar-nav .dropdown,
+    .navbar-nav .input-icon {
+        width: 100%;
+    }
+
+    .navbar .flex-row {
+        margin: 8px 0;
+    }
+
+    .card-body {
+        padding: 16px;
+    }
+
+    .table {
+        min-width: 520px;
+    }
+
+    #carousel-sample .carousel-item img {
+        height: 220px;
+    }
+}
